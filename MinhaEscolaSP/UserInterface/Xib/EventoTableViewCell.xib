@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventoTableViewCell" rowHeight="69" id="7iv-zd-U93" customClass="EventoTableViewCell" customModule="MinhaEscolaSP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7iv-zd-U93" id="S3V-01-c3M">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição do evento" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1k-L2-aTf">
+                        <rect key="frame" x="15" y="40" width="290" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do evento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9C5-66-hbH">
+                        <rect key="frame" x="15" y="11" width="290" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Kfd-LX-meF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9C5-66-hbH" firstAttribute="top" secondItem="S3V-01-c3M" secondAttribute="top" constant="11" id="9eu-6I-vXc"/>
+                    <constraint firstItem="9C5-66-hbH" firstAttribute="leading" secondItem="S3V-01-c3M" secondAttribute="leading" constant="15" id="Bxv-tm-h2u"/>
+                    <constraint firstItem="J1k-L2-aTf" firstAttribute="leading" secondItem="S3V-01-c3M" secondAttribute="leading" constant="15" id="Mjh-ob-8KD"/>
+                    <constraint firstItem="J1k-L2-aTf" firstAttribute="top" secondItem="9C5-66-hbH" secondAttribute="bottom" constant="8" id="OiY-zV-wyE"/>
+                    <constraint firstAttribute="bottom" secondItem="J1k-L2-aTf" secondAttribute="bottom" constant="8" id="RXK-Pq-rxK"/>
+                    <constraint firstAttribute="trailing" secondItem="9C5-66-hbH" secondAttribute="trailing" constant="15" id="X0B-SW-gAa"/>
+                    <constraint firstAttribute="trailing" secondItem="J1k-L2-aTf" secondAttribute="trailing" constant="15" id="dRI-8r-Gsr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descricaoEventoLabel" destination="J1k-L2-aTf" id="mTx-1c-lJU"/>
+                <outlet property="nomeEventoLabel" destination="9C5-66-hbH" id="B7g-u2-GAZ"/>
+            </connections>
+            <point key="canvasLocation" x="157" y="139"/>
+        </tableViewCell>
+    </objects>
+</document>

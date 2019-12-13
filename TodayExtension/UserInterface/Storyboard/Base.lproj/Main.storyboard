@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JFh-fB-yv1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--notas-->
+        <scene sceneID="5Re-CB-4Re">
+            <objects>
+                <viewController storyboardIdentifier="NotasViewController" id="JFh-fB-yv1" customClass="NotasViewController" customModule="TodayExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VjO-vj-FQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNm-pB-lur">
+                                <rect key="frame" x="16" y="28" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="9OL-ut-PPz"/>
+                                    <constraint firstAttribute="height" constant="22" id="gUj-pU-i69"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" image="back"/>
+                                <connections>
+                                    <action selector="anterior" destination="JFh-fB-yv1" eventType="touchUpInside" id="h55-Pc-IwS"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPG-51-3MD">
+                                <rect key="frame" x="68" y="28" width="239" height="21"/>
+                                <string key="text">1º bimestre
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga9-Ea-v6d">
+                                <rect key="frame" x="315" y="28" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="PXE-BJ-Nf7"/>
+                                    <constraint firstAttribute="height" constant="22" id="ae8-q2-mFO"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" image="back"/>
+                                <connections>
+                                    <action selector="proximo" destination="JFh-fB-yv1" eventType="touchUpInside" id="ch7-8W-umz"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8q2-gd-7z3">
+                                <rect key="frame" x="0.0" y="57" width="375" height="609.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICL-n5-aEy">
+                                <rect key="frame" x="16" y="343.5" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eY7-XF-3Yy">
+                                <rect key="frame" x="169" y="325" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tPG-51-3MD" firstAttribute="leading" secondItem="ZNm-pB-lur" secondAttribute="trailing" constant="8" id="CH8-h4-UXY"/>
+                            <constraint firstItem="PxE-PJ-9Lw" firstAttribute="bottom" secondItem="8q2-gd-7z3" secondAttribute="bottom" constant="0.5" id="Ec7-CF-HZ3"/>
+                            <constraint firstItem="PxE-PJ-9Lw" firstAttribute="trailing" secondItem="Ga9-Ea-v6d" secondAttribute="trailing" constant="16" id="SzI-pm-Mcx"/>
+                            <constraint firstItem="tPG-51-3MD" firstAttribute="top" secondItem="PxE-PJ-9Lw" secondAttribute="top" constant="8" id="Te8-Vp-mCs"/>
+                            <constraint firstItem="Ga9-Ea-v6d" firstAttribute="leading" secondItem="tPG-51-3MD" secondAttribute="trailing" constant="8" id="ci1-qd-miV"/>
+                            <constraint firstItem="ZNm-pB-lur" firstAttribute="top" secondItem="PxE-PJ-9Lw" secondAttribute="top" constant="8" id="dfX-sa-qHq"/>
+                            <constraint firstItem="ICL-n5-aEy" firstAttribute="leading" secondItem="PxE-PJ-9Lw" secondAttribute="leading" constant="16" id="gqF-eP-52o"/>
+                            <constraint firstItem="ICL-n5-aEy" firstAttribute="centerX" secondItem="PxE-PJ-9Lw" secondAttribute="centerX" id="iG6-eQ-BVn"/>
+                            <constraint firstItem="Ga9-Ea-v6d" firstAttribute="top" secondItem="PxE-PJ-9Lw" secondAttribute="top" constant="8" id="jPK-77-ZzU"/>
+                            <constraint firstItem="eY7-XF-3Yy" firstAttribute="centerX" secondItem="PxE-PJ-9Lw" secondAttribute="centerX" id="o81-K8-d7z"/>
+                            <constraint firstItem="ZNm-pB-lur" firstAttribute="leading" secondItem="PxE-PJ-9Lw" secondAttribute="leading" constant="16" id="ope-uE-7UX"/>
+                            <constraint firstItem="PxE-PJ-9Lw" firstAttribute="trailing" secondItem="ICL-n5-aEy" secondAttribute="trailing" constant="16" id="pIu-Yx-cFr"/>
+                            <constraint firstItem="8q2-gd-7z3" firstAttribute="leading" secondItem="PxE-PJ-9Lw" secondAttribute="leading" id="swE-5i-C2P"/>
+                            <constraint firstItem="PxE-PJ-9Lw" firstAttribute="trailing" secondItem="8q2-gd-7z3" secondAttribute="trailing" id="tJL-6b-kpY"/>
+                            <constraint firstItem="ICL-n5-aEy" firstAttribute="centerY" secondItem="PxE-PJ-9Lw" secondAttribute="centerY" id="vjj-od-nOa"/>
+                            <constraint firstItem="eY7-XF-3Yy" firstAttribute="centerY" secondItem="PxE-PJ-9Lw" secondAttribute="centerY" id="xb7-aq-zzV"/>
+                            <constraint firstItem="8q2-gd-7z3" firstAttribute="top" secondItem="tPG-51-3MD" secondAttribute="bottom" constant="8" id="zgw-qb-CeD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PxE-PJ-9Lw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="notas" id="r3k-7a-3q9"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="eY7-XF-3Yy" id="Jez-2G-bti"/>
+                        <outlet property="anteriorButton" destination="ZNm-pB-lur" id="RmJ-VT-cHL"/>
+                        <outlet property="bimestreLabel" destination="tPG-51-3MD" id="zv8-LL-4hj"/>
+                        <outlet property="messageLabel" destination="ICL-n5-aEy" id="O3A-5b-WFz"/>
+                        <outlet property="notasScrollView" destination="8q2-gd-7z3" id="Wv1-Zv-XVt"/>
+                        <outlet property="proximoButton" destination="Ga9-Ea-v6d" id="02d-t0-5Xx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45S-DW-B8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3125.5999999999999" y="872.11394302848578"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="13" height="21"/>
+    </resources>
+</document>

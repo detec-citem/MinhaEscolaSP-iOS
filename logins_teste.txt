@@ -1,0 +1,15 @@
+Login de teste:
+
+Perfil Aluno:
+RA: 000000000-0
+UF: SP
+Senha: 12345678
+
+Perfil Responsável Rg:
+RG: 00000000-0
+UF: SP
+Senha: 12345678
+
+Perfil Responsável RNE:
+RNE: 000000000
+Senha: 12345678

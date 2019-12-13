@@ -1,0 +1,85 @@
+/* 
+  Localizable.strings
+  MinhaEscolaSP
+
+  Created by Victor Bozelli Alvarez on 21/01/19.
+  Copyright © 2019 PRODESP. All rights reserved.
+*/
+
+"br.gov.sp.educacao.minhaescola.aguardandoEnvio" = "aguardando envio";
+"br.gov.sp.educacao.minhaescola.algoDeErradoAconteceu" = "Algo de errado aconteceu. Tente novamente.";
+"br.gov.sp.educacao.minhaescola.alterarTelefone" = "alterar telefone";
+"br.gov.sp.educacao.minhaescola.alunoSemCarteirinha" = "Este aluno não possui carteirinha";
+"br.gov.sp.educacao.minhaescola.atencao" = "Atenção";
+"br.gov.sp.educacao.minhaescola.avaliacaoEnviadaComSucesso" = "Avaliação enviada com sucesso";
+"br.gov.sp.educacao.minhaescola.avaliarUmaVezPorDia" = "É possível avaliar 1 vez por dia, apenas em dias de aula";
+"br.gov.sp.educacao.minhaescola.bibliotecaDeFotos" = "Biblioteca de Fotos";
+"br.gov.sp.educacao.minhaescola.cadastrarTelefone" = "cadastrar telefone";
+"br.gov.sp.educacao.minhaescola.camera" = "Camera";
+"br.gov.sp.educacao.minhaescola.cancelar" = "Cancelar";
+"br.gov.sp.educacao.minhaescola.carregando" = "Carregando...";
+"br.gov.sp.educacao.minhaescola.carregandoBoletim" = "Carregando boletim, por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.carregandoCalendario" = "Carregando calendário, por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.carregandoCarteirinha" = "Carregando carteirinha, por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.carregandoFrequencias" = "Carregando frequências, por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.carregandoHorarios" = "Carregando horarios de aula, por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.carregandoNotas" = "Carregando notas... Por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.comprovanteAnexado" = "comprovante anexado";
+"br.gov.sp.educacao.minhaescola.desejaRealizarARematriculaPara" = "Deseja continuar na rede pública em %d?";
+"br.gov.sp.educacao.minhaescola.digiteEmail" = "Digite o email";
+"br.gov.sp.educacao.minhaescola.digiteEndereco" = "Digite o endereço";
+"br.gov.sp.educacao.minhaescola.digiteRaCompleto" = "Digite o RA completo";
+"br.gov.sp.educacao.minhaescola.digiteRgCompleto" = "Digite o RG completo";
+"br.gov.sp.educacao.minhaescola.digiteRne" = "Digite o RNE";
+"br.gov.sp.educacao.minhaescola.digiteSenha" = "Digite a senha";
+"br.gov.sp.educacao.minhaescola.documento" = "Documento";
+"br.gov.sp.educacao.minhaescola.duvidaAusencias" = "Ausências compensadas por meio de atividades programadas, com a finalidade de suprir as faltas e sanar as lacunas de aprendizagem provocadas por elas";
+"br.gov.sp.educacao.minhaescola.duvidaRa" = "O RA (Registro do Aluno) é o número de identificação do aluno no Sistema de Cadastro de Alunos da Secretaria da Educação do Estado de São Paulo. Para saber seu RA, consulte a secretaria de sua escola.";
+"br.gov.sp.educacao.minhaescola.enviandoAvaliacao" = "Enviando avaliacao... Por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.enviandoInformacoes" = "Enviando informações... Por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.enviandoFoto" = "Enviando foto... Por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.erroCalendario" = "A escola ainda não realizou as parametrizações necessárias para visualizar o calendário";
+"br.gov.sp.educacao.minhaescola.erroGeolocalizacao" = "Não foi possível realizar a geolocalização desse endereço. Verifique se todas as informações do endereço estão corretas.";
+"br.gov.sp.educacao.minhaescola.fazendoGeolocalizacao" = "Fazendo geolocalização... Por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.fazendoLogin" = "Fazendo login, por favor aguarde...";
+"br.gov.sp.educacao.minhaescola.galeriaDeImagens" = "Galeria de Imagens";
+"br.gov.sp.educacao.minhaescola.imagem" = "Imagem";
+"br.gov.sp.educacao.minhaescola.informacoesAtualizadasComSucesso" = "Informações atualizadas com sucesso";
+"br.gov.sp.educacao.minhaescola.informacoesComprovante" = "Serão aceitos como comprovantes de residência os seguintes itens, a seguir relacionados:\na.    Contas de água, gás, energia elétrica ou telefone (fixo ou móvel);\nb.    Contrato de aluguel em vigor, com firma do proprietário do imóvel reconhecida em cartório, acompanhado de um dos comprovantes de conta de água, gás, energia elétrica ou telefone em nome do proprietário do imóvel;\nc.    Declaração do proprietário do imóvel confirmando a residência, com firma reconhecida em cartório, acompanhada de um dos comprovantes de conta de água, gás, energia elétrica ou telefone em nome do proprietário do imóvel;\nd.    Declaração anual de IRPF;\ne.    Demonstrativo/comunicado do INSS ou da SRF;\nf.    Contracheque emitido por órgão público;\ng.    TRCT – Termo de Rescisão do Contrato de Trabalho;\nh.    Boleto bancário de mensalidade escolar, de mensalidade de plano de saúde, de condomínio ou de financiamento habitacional;\ni.    Fatura de cartão de crédito;\nj.    Extrato/demonstrativo bancário de outras contas, corrente ou poupança;\nk.    Extrato/demonstrativo bancário de empréstimo ou aplicação financeira;\nl.    Extrato do FGTS;\nm.    Guia/carnê do IPTU ou IPVA;\nn.    CRLV – Certificado de Registro e Licenciamento de Veículos;\no.    Infração de trânsito;\np.    Laudo de avaliação de imóvel pela CAIXA;\nq.    Escritura ou Certidão de Ônus do imóvel;\nr.    Declaração firmada pelo próprio interessado ou por procurador bastante, conforme Lei nº 7.115/1983.";
+"br.gov.sp.educacao.minhaescola.informacoesEnviadasComSucesso" = "Informações enviadas com sucesso!";
+"br.gov.sp.educacao.minhaescola.iniciar" = "Iniciar";
+"br.gov.sp.educacao.minhaescola.internet" = "Verifique sua conexão e tente novamente";
+"br.gov.sp.educacao.minhaescola.internetAlimentacao" = "Conecte na internet para enviar as informações da avaliação da alimentação";
+"br.gov.sp.educacao.minhaescola.internetBoletim" = "Conecte na internet para visualizar o boletim";
+"br.gov.sp.educacao.minhaescola.internetCarteirinha" = "Conecte na internet para visualizar a carteirinha";
+"br.gov.sp.educacao.minhaescola.internetFrequencias" = "Conecte na internet para visualizar as frequências";
+"br.gov.sp.educacao.minhaescola.internetHorarioAula" = "Conecte na internet para visualizar os horário de aula";
+"br.gov.sp.educacao.minhaescola.internetLogin" = "Conecte na internet para fazer login";
+"br.gov.sp.educacao.minhaescola.internetNotas" = "Conecte na internet para visualizar as notas";
+"br.gov.sp.educacao.minhaescola.internetSobreMim" = "Conecte na internet para enviar as informações";
+"br.gov.sp.educacao.minhaescola.nao" = "Não";
+"br.gov.sp.educacao.minhaescola.naoCadastrado" = "Caso ainda não esteja cadastrado, solicite o cadastro na secretaria da escola do(a) aluno(a)";
+"br.gov.sp.educacao.minhaescola.naoTenhoInteresse" = "Não tenho interesse";
+"br.gov.sp.educacao.minhaescola.necessarioFornecerOComprovanteDeResidencia" = "Necessário fornecer o comprovante de residência";
+"br.gov.sp.educacao.minhaescola.nenhumaAvaliacaoLancada" = "nenhuma avaliação lançada";
+"br.gov.sp.educacao.minhaescola.ok" = "OK";
+"br.gov.sp.educacao.minhaescola.ops" = "Ops!";
+"br.gov.sp.educacao.minhaescola.preenchaTodasInformacoes" = "Preencha todas as informações para realizar a rematrícula";
+"br.gov.sp.educacao.minhaescola.primeiraSenha" = "A primeira senha é a data de nascimento sem as barras, por exemplo: 18062002 (18/06/2002)";
+"br.gov.sp.educacao.minhaescola.primeiraSenhaResponsavel" = "A primeira senha é o CPF, somente os números, por exemplo: 04601608800";
+"br.gov.sp.educacao.minhaescola.qualOTipoDeArquivoDoComprovante" = "Qual o tipo de arquivo do comprovante?";
+"br.gov.sp.educacao.minhaescola.realizeAMatriculaDe" = "Realize a rematrícula de %d";
+"br.gov.sp.educacao.minhaescola.selecioneAOrigemDaFoto" = "Selecione a origem da foto";
+"br.gov.sp.educacao.minhaescola.selecioneUmAlunoQueNaoRealizouAMatriculaAinda" = "Selecione um aluno que não realizou a matrícula ainda";
+"br.gov.sp.educacao.minhaescola.semHorarioTurmaAtual" = "A escola ainda não realizou as parametrizações necessárias para visualizar o horário de aulas";
+"br.gov.sp.educacao.minhaescola.semBoletim" = "Não há boletim disponível para esta turma";
+"br.gov.sp.educacao.minhaescola.semEscola" = "Não tem escola associada a este aluno";
+"br.gov.sp.educacao.minhaescola.semFrequenciaTurmaAtual" = "Ainda não há frequências lançadas";
+"br.gov.sp.educacao.minhaescola.semNotaTurmaAtual" = "Ainda não há notas lançadas";
+"br.gov.sp.educacao.minhaescola.semTurmaAnoAtual" = "Não foi encontrada turma para o ano atual";
+"br.gov.sp.educacao.minhaescola.semTurmas" = "Não foram encontradas turmas associadas a este aluno";
+"br.gov.sp.educacao.minhaescola.sim" = "Sim";
+"br.gov.sp.educacao.minhaescola.sucesso" = "Sucesso";
+"br.gov.sp.educacao.minhaescola.textoCompartilhar" = "Eu recomendo o app Minha Escola SP da Secretaria da Educação do Estado de São Paulo.\nNele é possível ver as notas, as faltas, a carteirinha digital,\navaliar a alimentação e muito mais!\nSegue o link para baixar:\nhttps://play.google.com/store/apps/details?id=br.gov.sp.educacao.minhaescola";
+"br.gov.sp.educacao.minhaescola.tituloCompartilhar" = "Minha Escola SP";
+"br.gov.sp.educacao.minhaescola.voceTemAlteracoesNaoSalvas" = "Você tem alterações não salvas. Deseja mesmo sair?";

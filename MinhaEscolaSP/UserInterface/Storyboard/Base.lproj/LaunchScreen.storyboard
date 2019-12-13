@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="OHI-XK-weR">
+                                <rect key="frame" x="0.0" y="-24" width="320" height="538"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-up-6bo">
+                                <rect key="frame" x="80" y="54.5" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="WQ4-u4-h5j"/>
+                                    <constraint firstAttribute="height" constant="160" id="Y2p-Gz-ZyK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textoMinhaEscolaSp" translatesAutoresizingMaskIntoConstraints="NO" id="ARp-aE-iG8">
+                                <rect key="frame" x="16" y="222.5" width="288" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="7vp-PF-0Wz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoGovernoSp" translatesAutoresizingMaskIntoConstraints="NO" id="vZ2-6u-mcn">
+                                <rect key="frame" x="92.5" y="345.5" width="135" height="114.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ARp-aE-iG8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0bN-Pq-moa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OHI-XK-weR" secondAttribute="trailing" id="6SD-ll-3Zm"/>
+                            <constraint firstItem="vZ2-6u-mcn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7WR-aw-uFV"/>
+                            <constraint firstItem="4D2-up-6bo" firstAttribute="centerX" secondItem="OHI-XK-weR" secondAttribute="centerX" id="9Nc-FC-YIK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vZ2-6u-mcn" secondAttribute="bottom" constant="20" id="GgX-kC-1WL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ARp-aE-iG8" secondAttribute="trailing" constant="16" id="JaI-ce-W6T"/>
+                            <constraint firstItem="OHI-XK-weR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="Vzo-rf-YBE"/>
+                            <constraint firstItem="ARp-aE-iG8" firstAttribute="top" secondItem="4D2-up-6bo" secondAttribute="bottom" constant="8" id="cji-Gz-i3p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="OHI-XK-weR" secondAttribute="top" constant="44" id="gQI-ya-uGL"/>
+                            <constraint firstItem="ARp-aE-iG8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hhj-Ly-LW9"/>
+                            <constraint firstItem="ARp-aE-iG8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rdQ-Rb-hJC"/>
+                            <constraint firstItem="OHI-XK-weR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yhg-HB-lbl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281.25" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fundo" width="414" height="896"/>
+        <image name="logo" width="512" height="512"/>
+        <image name="logoGovernoSp" width="135" height="114.5"/>
+        <image name="textoMinhaEscolaSp" width="1532" height="220"/>
+    </resources>
+</document>

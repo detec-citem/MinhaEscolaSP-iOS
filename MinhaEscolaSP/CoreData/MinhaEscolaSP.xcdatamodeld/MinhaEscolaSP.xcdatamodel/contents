@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G84" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Aluno" representedClassName="Aluno" syncable="YES">
+        <attribute name="bairroEndereco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cep" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cidadeEndereco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="codigoAluno" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="complementoEndereco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cpf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataNascimento" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="digitoRa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="digitoRg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endereco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idade" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitudeIndicativo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="localizacaoDiferenciada" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitudeIndicativo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="municipioNascimento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nacionalidade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomeMae" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomePai" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroEndereco" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numeroRa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="respondeRematricula" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipoLogradouro" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ufEndereco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ufNascimento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ufRa" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="carteirinha" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Carteirinha" inverseName="aluno" inverseEntity="Carteirinha" syncable="YES"/>
+        <relationship name="contatos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contato" inverseName="aluno" inverseEntity="Contato" syncable="YES"/>
+        <relationship name="escolas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Escola" inverseName="aluno" inverseEntity="Escola" syncable="YES"/>
+        <relationship name="frequencias" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Frequencia" inverseName="aluno" inverseEntity="Frequencia" syncable="YES"/>
+        <relationship name="horariosAula" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HorarioAula" inverseName="aluno" inverseEntity="HorarioAula" syncable="YES"/>
+        <relationship name="interesseRematricula" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InteresseRematricula" inverseName="aluno" inverseEntity="InteresseRematricula" syncable="YES"/>
+        <relationship name="matriculas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Turma" inverseName="aluno" inverseEntity="Turma" syncable="YES"/>
+        <relationship name="notas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Nota" inverseName="aluno" inverseEntity="Nota" syncable="YES"/>
+        <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="aluno" inverseEntity="Usuario" syncable="YES"/>
+    </entity>
+    <entity name="Bimestre" representedClassName="Bimestre" syncable="YES">
+        <attribute name="dataFim" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dataInicio" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="numeroBimestre" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="diasEvento" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DiaEvento" inverseName="bimestre" inverseEntity="DiaEvento" syncable="YES"/>
+    </entity>
+    <entity name="Carteirinha" representedClassName="Carteirinha" syncable="YES">
+        <attribute name="apelido" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="codigoAlunoCriptografado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qrCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validade" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="carteirinha" inverseEntity="Aluno" syncable="YES"/>
+    </entity>
+    <entity name="ComposicaoNota" representedClassName="ComposicaoNota" syncable="YES">
+        <attribute name="descricaoAtividade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroNota" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="nota" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Nota" inverseName="composicoesNota" inverseEntity="Nota" syncable="YES"/>
+    </entity>
+    <entity name="Contato" representedClassName="Contato" syncable="YES">
+        <attribute name="codigo" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoDdd" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="codigoResponsavel" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoTipoTelefone" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="complemento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operacao" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="telefone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validacaoSms" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="contatos" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="contatos" inverseEntity="Usuario" syncable="YES"/>
+    </entity>
+    <entity name="ContatoEscola" representedClassName="ContatoEscola" syncable="YES">
+        <attribute name="telefone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="escolaAluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Escola" inverseName="contatos" inverseEntity="Escola" syncable="YES"/>
+    </entity>
+    <entity name="DiaEvento" representedClassName="DiaEvento" syncable="YES">
+        <attribute name="descricaoEvento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dia" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="disciplina" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="letivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mes" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nomeEvento" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bimestre" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bimestre" inverseName="diasEvento" inverseEntity="Bimestre" syncable="YES"/>
+        <relationship name="turma" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Turma" inverseName="diasEvento" inverseEntity="Turma" syncable="YES"/>
+    </entity>
+    <entity name="Escola" representedClassName="Escola" syncable="YES">
+        <attribute name="codigo" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="diretor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enderecoUnidade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="escolas" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="contatos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContatoEscola" inverseName="escolaAluno" inverseEntity="ContatoEscola" syncable="YES"/>
+    </entity>
+    <entity name="Frequencia" representedClassName="Frequencia" syncable="YES">
+        <attribute name="ausenciasCompensadas" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bimestre" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoDisciplina" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="faltas" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nomeDisciplina" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="porcentagemFaltas" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="frequencias" inverseEntity="Aluno" syncable="YES"/>
+    </entity>
+    <entity name="HorarioAula" representedClassName="HorarioAula" syncable="YES">
+        <attribute name="codigoMateria" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dataHoraFim" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataHoraInicio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diaSemana" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomeMateriaAbreviado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomeMateriaCompleto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomeProfessor" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="horariosAula" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="turma" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Turma" inverseName="horariosAula" inverseEntity="Turma" syncable="YES"/>
+    </entity>
+    <entity name="ImagemTurma" representedClassName="ImagemTurma" syncable="YES">
+        <attribute name="codigoMateria" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nomeImagem" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="InteresseRematricula" representedClassName="InteresseRematricula" syncable="YES">
+        <attribute name="aceitoTermoResponsabilidade" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="anoLetivo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="anoLetivoRematricula" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoInteresseRematricula" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoOpcaoNoturno" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cursoTecnico" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="interesseContinuidade" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="interesseEspanhol" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="interesseNovotec" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="interesseTurnoIntegral" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="interesseTurnoNoturno" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="interesseRematricula" inverseEntity="Aluno" syncable="YES"/>
+    </entity>
+    <entity name="Nota" representedClassName="Nota" syncable="YES">
+        <attribute name="bimestre" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoDisciplina" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nomeDisciplina" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nota" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="notas" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="composicoesNota" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ComposicaoNota" inverseName="nota" inverseEntity="ComposicaoNota" syncable="YES"/>
+    </entity>
+    <entity name="Turma" representedClassName="Turma" syncable="YES">
+        <attribute name="anoLetivo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoMatriculaAluno" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoTipoEnsino" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codigoTurma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dataFimMatricula" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dataInicioMatricula" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="nomeEscola" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomeTurma" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="situacaoAprovacao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="situacaoMatricula" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipoEnsino" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="matriculas" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="diasEvento" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DiaEvento" inverseName="turma" inverseEntity="DiaEvento" syncable="YES"/>
+        <relationship name="horariosAula" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HorarioAula" inverseName="turma" inverseEntity="HorarioAula" syncable="YES"/>
+    </entity>
+    <entity name="Usuario" representedClassName="Usuario" syncable="YES">
+        <attribute name="codigoUsuario" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="digitoRa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="escolaCentralizada" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="estudante" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroRa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="perfil" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ufRa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usuario" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="usuario" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="contatos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contato" inverseName="usuario" inverseEntity="Contato" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Aluno" positionX="9" positionY="180" width="128" height="630"/>
+        <element name="Bimestre" positionX="-27" positionY="135" width="128" height="105"/>
+        <element name="Carteirinha" positionX="-36" positionY="135" width="128" height="135"/>
+        <element name="ComposicaoNota" positionX="-18" positionY="144" width="128" height="90"/>
+        <element name="Contato" positionX="-36" positionY="135" width="128" height="195"/>
+        <element name="ContatoEscola" positionX="-27" positionY="144" width="128" height="75"/>
+        <element name="DiaEvento" positionX="-27" positionY="135" width="128" height="165"/>
+        <element name="Escola" positionX="-36" positionY="117" width="128" height="180"/>
+        <element name="Frequencia" positionX="-27" positionY="135" width="128" height="150"/>
+        <element name="HorarioAula" positionX="-9" positionY="162" width="128" height="180"/>
+        <element name="ImagemTurma" positionX="0" positionY="171" width="128" height="75"/>
+        <element name="InteresseRematricula" positionX="-27" positionY="135" width="128" height="225"/>
+        <element name="Nota" positionX="-27" positionY="135" width="128" height="135"/>
+        <element name="Turma" positionX="-54" positionY="72" width="128" height="255"/>
+        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="255"/>
+    </elements>
+</model>

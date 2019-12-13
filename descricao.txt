@@ -1,0 +1,16 @@
+O aplicativo Minha Escola SP, da Secretaria da Educação do Estado de São Paulo, é voltado aos alunos das escolas da rede estadual e seus responsáveis. 
+
+Seu objetivo é aumentar o engajamento dos alunos com a escola e aumentar a participação da família na vida escolar dos alunos!
+
+O aplicativo possui as seguintes funcionalidades:
+
+- Avaliar a alimentação
+- Carteirinha do aluno
+- Consulta ao boletim
+- Consulta dos horários de aula
+- Consulta do calendário escolar
+- Consulta das frequências
+- Consulta ao histórico de matrículas
+- Informações de contato com a escola
+- Realizar rematrícula
+- Visualização simplificada das notas

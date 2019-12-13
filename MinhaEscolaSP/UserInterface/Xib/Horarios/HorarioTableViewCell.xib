@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HorarioTableViewCell" rowHeight="236" id="M2M-x9-PPT" customClass="HorarioTableViewCell" customModule="MinhaEscolaSP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M2M-x9-PPT" id="r1h-jS-IA9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="235.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbg-wV-bCU">
+                        <rect key="frame" x="32" y="16" width="311" height="203.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="materia2700" translatesAutoresizingMaskIntoConstraints="NO" id="50U-qu-olq">
+                                <rect key="frame" x="0.0" y="0.0" width="311" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="o8p-8a-bcU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00 - 07:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-px-WHy">
+                                <rect key="frame" x="16" y="68" width="295" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATEMATICA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="B57-ug-gbQ">
+                                <rect key="frame" x="16" y="97" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome do professor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1a-2I-Cuz">
+                                <rect key="frame" x="16" y="126" width="279" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5º ANO C MANHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkh-jv-4EZ">
+                                <rect key="frame" x="16" y="154.5" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mkh-jv-4EZ" firstAttribute="top" secondItem="Q1a-2I-Cuz" secondAttribute="bottom" constant="8" id="2Ha-yh-IfI"/>
+                            <constraint firstItem="B57-ug-gbQ" firstAttribute="leading" secondItem="dbg-wV-bCU" secondAttribute="leading" constant="16" id="2u6-fM-1pa"/>
+                            <constraint firstItem="Q1a-2I-Cuz" firstAttribute="top" secondItem="B57-ug-gbQ" secondAttribute="bottom" constant="8" id="8cL-Ae-cNb"/>
+                            <constraint firstItem="nzt-px-WHy" firstAttribute="top" secondItem="50U-qu-olq" secondAttribute="bottom" constant="8" id="Co2-l8-cdg"/>
+                            <constraint firstItem="Q1a-2I-Cuz" firstAttribute="leading" secondItem="dbg-wV-bCU" secondAttribute="leading" constant="16" id="HAk-9b-KGo"/>
+                            <constraint firstAttribute="trailing" secondItem="50U-qu-olq" secondAttribute="trailing" id="MC8-Eo-UXk"/>
+                            <constraint firstItem="B57-ug-gbQ" firstAttribute="top" secondItem="nzt-px-WHy" secondAttribute="bottom" constant="8" id="ODB-W7-JcR"/>
+                            <constraint firstItem="Mkh-jv-4EZ" firstAttribute="leading" secondItem="dbg-wV-bCU" secondAttribute="leading" constant="16" id="Pdq-c6-tf6"/>
+                            <constraint firstItem="50U-qu-olq" firstAttribute="centerX" secondItem="dbg-wV-bCU" secondAttribute="centerX" id="PyN-bf-dyP"/>
+                            <constraint firstItem="nzt-px-WHy" firstAttribute="leading" secondItem="dbg-wV-bCU" secondAttribute="leading" constant="16" id="Uhv-6g-r1L"/>
+                            <constraint firstAttribute="trailing" secondItem="Q1a-2I-Cuz" secondAttribute="trailing" constant="16" id="g5e-ei-tOB"/>
+                            <constraint firstAttribute="trailing" secondItem="nzt-px-WHy" secondAttribute="trailing" id="jfF-aM-Wqs"/>
+                            <constraint firstItem="50U-qu-olq" firstAttribute="leading" secondItem="dbg-wV-bCU" secondAttribute="leading" id="llS-Rn-lIz"/>
+                            <constraint firstItem="50U-qu-olq" firstAttribute="top" secondItem="dbg-wV-bCU" secondAttribute="top" id="m9y-AU-o7I"/>
+                            <constraint firstAttribute="trailing" secondItem="B57-ug-gbQ" secondAttribute="trailing" constant="16" id="pzY-qJ-5v3"/>
+                            <constraint firstAttribute="trailing" secondItem="Mkh-jv-4EZ" secondAttribute="trailing" constant="16" id="xEQ-2n-7BQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="dbg-wV-bCU" firstAttribute="top" secondItem="r1h-jS-IA9" secondAttribute="top" constant="16" id="A1t-cO-Ct8"/>
+                    <constraint firstItem="dbg-wV-bCU" firstAttribute="leading" secondItem="r1h-jS-IA9" secondAttribute="leading" constant="32" id="KwL-Ji-uF4"/>
+                    <constraint firstAttribute="trailing" secondItem="dbg-wV-bCU" secondAttribute="trailing" constant="32" id="S7J-oa-Rxh"/>
+                    <constraint firstAttribute="bottom" secondItem="dbg-wV-bCU" secondAttribute="bottom" constant="16" id="UjA-gB-fOg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="horarioLabel" destination="nzt-px-WHy" id="iIL-HS-FmN"/>
+                <outlet property="materiaImageView" destination="50U-qu-olq" id="jlo-6o-Hpo"/>
+                <outlet property="materiaLabel" destination="B57-ug-gbQ" id="doI-4E-paG"/>
+                <outlet property="professorLabel" destination="Q1a-2I-Cuz" id="Bfa-Zs-dan"/>
+                <outlet property="turmaLabel" destination="Mkh-jv-4EZ" id="h2v-MK-985"/>
+            </connections>
+            <point key="canvasLocation" x="139.6875" y="200"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="materia2700" width="720" height="180"/>
+    </resources>
+</document>
